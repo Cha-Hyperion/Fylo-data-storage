@@ -4,5 +4,9 @@
     bottom: 10px;
     left: 0;
     right: 0;
-    color: white;
+    color: $color-text-primary;
+
+    a {
+        color: $color-text-primary;
+    }
 }

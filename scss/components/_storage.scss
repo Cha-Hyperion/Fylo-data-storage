@@ -1,0 +1,58 @@
+.storage {
+    background: $color-text-tertiary;
+    color: $color-text-primary;
+    height: 24vh;
+    border-radius: 10px;
+    position: relative;
+
+    &__text {
+        text-align: center;
+        margin: 2rem 0 1.5rem;
+
+        span {
+        font-weight: $font-weight-bold;
+
+        }
+    }
+
+    &__capacity {
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+        font-weight: $font-weight-bold;
+        margin-top: 1rem;
+
+    }
+
+    &__progress-bar {
+        width: calc(100% - 4rem);
+        margin: auto;
+        border-radius: 10px;
+        height: 1.1rem;
+        background: $color-text-quaternary;
+        position: relative;
+
+        &__level {
+            position: absolute;
+            height: .9rem;
+            width: 81.5%;
+            border-radius: 10px;
+
+            background: linear-gradient(to right, #ffa399,  #ff4d97);
+            top: .1rem;
+            left: .1rem;
+            z-index: 2;
+
+            &__end {
+                position: absolute;
+                background: $color-text-primary;
+                width: .7rem;
+                height: .7rem;
+                border-radius: .7rem;
+                right: .1rem;
+                top: .1rem;
+            }
+        }
+    }
+}

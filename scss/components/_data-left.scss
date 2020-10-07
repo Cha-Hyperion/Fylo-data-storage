@@ -1,0 +1,27 @@
+.data-left {
+    background: $color-text-primary;
+    //display: none;
+    position: absolute;
+    width: 51vw;
+    height: 10vh;
+    border-radius: 10px;
+    left: 14.5vw;
+    bottom: -5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__numbers {
+        color: $color-text-quaternary;
+        margin-right: .5rem;
+        font-size: 34px;
+        font-weight: $font-weight-bold;
+    }
+    &__text {
+        color: $color-text-secondary;
+        margin-left: .5rem;
+        text-transform: uppercase;
+
+    }
+
+}
