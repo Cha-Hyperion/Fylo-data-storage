@@ -4,14 +4,23 @@
     height: 24vh;
     border-radius: 10px;
     position: relative;
+    @include breakpoint-large {
+        width: 46%;
+        margin-left: 1rem;
+        margin-bottom: -3.8%;
+        height: 19vh;
+    }
 
     &__text {
         text-align: center;
         margin: 2rem 0 1.5rem;
+        @include breakpoint-large {
+        text-align: left;
+        margin-left: 2rem;
+        }
 
         span {
         font-weight: $font-weight-bold;
-
         }
     }
 
@@ -22,7 +31,6 @@
         justify-content: space-between;
         font-weight: $font-weight-bold;
         margin-top: 1rem;
-
     }
 
     &__progress-bar {
@@ -38,7 +46,6 @@
             height: .9rem;
             width: 81.5%;
             border-radius: 10px;
-
             background: linear-gradient(to right, #ffa399,  #ff4d97);
             top: .1rem;
             left: .1rem;

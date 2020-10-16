@@ -1,5 +1,5 @@
 .data-left {
-    background: $color-text-primary;
+    background: white;
     //display: none;
     position: absolute;
     width: 51vw;
@@ -10,6 +10,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include breakpoint-large {
+        width: 13vw;
+        height: 9vh;
+        bottom: 16vh;
+        left: auto;
+        right: 2rem;
+    }
 
     &__numbers {
         color: $color-text-quaternary;
@@ -17,10 +24,24 @@
         font-size: 34px;
         font-weight: $font-weight-bold;
     }
+
     &__text {
         color: $color-text-secondary;
         margin-left: .5rem;
         text-transform: uppercase;
+    }
+
+    &__arrow {
+        display: none;
+        @include breakpoint-large {
+            display: block;
+            border:1px solid white;
+            border-color:transparent white transparent  transparent;
+            border-width:3vh;
+            position: absolute;
+            bottom: -2.7vh;
+            right: 0;
+        }
 
     }
 
