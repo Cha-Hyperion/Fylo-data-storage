@@ -1,5 +1,9 @@
 # Frontend Mentor - Fylo data storage component
 
+👀 See my version in production : https://fylo-data-storage-front-end-mentor-challenge.vercel.app/
+
+👩🏼‍💻 My personal website : https://charlenezybala.com
+
 ![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
